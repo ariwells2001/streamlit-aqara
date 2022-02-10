@@ -28,7 +28,7 @@ col1.metric("온도",str(lastData[0][0])+" ℃",str(lastData[0][0]-lastData[1][0
 col2.metric("습도",str(lastData[0][1]) + " %",str(lastData[0][1]-lastData[1][1])+ " %")
 col3.metric("기압",str(lastData[0][2]) + " hPa",str(lastData[0][2]-lastData[1][2])+ " hPa")
 
-page=st.sidebar.selectbox("Explore or Predict using Aqara THP",("Predict","Explore","Model Evaluation","Deep Learning","Database","AutoML"))
+page=st.sidebar.selectbox("Explore or Predict using Aqara THP",("Predict","Explore","Model Evaluation","Deep Learning","Database"))
 
 if page == "Predict":
     show_predict_page()
